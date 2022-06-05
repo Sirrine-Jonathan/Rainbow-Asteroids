@@ -1,9 +1,9 @@
 CC = g++
 
-all: asteroids
+all: rainbowasteroids
 
-asteroids: driver.o game.o uiInteract.o  velocity.o uiDraw.o ship.o rocks.o powerUp.o point.o flyingObject.o bullet.o
-	$(CC) -o asteroids driver.o game.o uiInteract.o velocity.o uiDraw.o ship.o rocks.o powerUp.o point.o flyingObject.o bullet.o -framework OpenGL -framework GLUT
+rainbowasteroids: driver.o game.o uiInteract.o  velocity.o uiDraw.o ship.o rocks.o powerUp.o point.o flyingObject.o bullet.o
+	$(CC) -o rainbowasteroids driver.o game.o uiInteract.o velocity.o uiDraw.o ship.o rocks.o powerUp.o point.o flyingObject.o bullet.o -framework OpenGL -framework GLUT
 
 driver.o: game.o uiInteract.o
 	$(CC) -c driver.cpp
@@ -41,4 +41,4 @@ bullet.o: bullet.cpp flyingObject.o uiDraw.o
 .PHONY: all clean
 
 clean:
-	rm *.o asteroids
+	rm *.o rainbowasteroids
