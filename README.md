@@ -4,7 +4,9 @@
 ### How to run
 
 -Clone the repo
+
 -Run `make` to build the game
+
 -Run `./rainbowasteroids` to start the game
 
 ### How to Play
